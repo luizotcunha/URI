@@ -1,0 +1,12 @@
+#include<stdio.h>
+
+int main(){
+	double horas,km,kh;
+
+	scanf("%lf\n %lf",&horas,&km);
+	kh=km*horas;
+	kh=kh/12;
+	printf("%.3lf\n",kh);
+
+	return 0;
+}
