@@ -1,0 +1,11 @@
+#include<stdio.h>
+
+int main(){
+	int km;
+	float lit;
+
+	scanf("%d %f",&km,&lit);
+	printf("%.3f km/l\n",km/lit);
+
+	return 0;
+}
