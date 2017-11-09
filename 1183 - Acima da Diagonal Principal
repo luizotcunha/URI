@@ -1,0 +1,45 @@
+#include<stdio.h>
+#define tam 12
+
+int main(){
+	float tabela[tam][tam],soma=0;
+	int i,j,contador;
+	char op;
+	
+	scanf("%c",&op);
+	
+	for (i=0;i<tam;i++)
+	{
+		for (j=0;j<tam;j++)
+		{
+		scanf("%f",&tabela[i][j]);	
+		}
+	}
+
+	
+
+	for (i=0;i<tam;i++)
+	{
+		for (j=0;j<tam;j++)
+		{
+			if((i<j)&&(i!=j))
+			{			
+				soma=soma+tabela[i][j];
+				contador++;			
+			}
+		}	
+	}
+	
+	if(op=='S')
+	{
+		printf("%.1f\n",soma);	
+	}
+	else
+	{
+		if(op=='M')
+		{
+			soma=soma/contador;
+			printf("%.1f\n",soma);
+		}
+	}
+}
