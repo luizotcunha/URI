@@ -1,0 +1,15 @@
+#include<stdio.h> 
+
+int main()
+{
+   float nota1,nota2,nota3,MEDIA;
+
+   scanf("%f %f %f",&nota1,&nota2,&nota3);
+
+   MEDIA=(nota1*2+nota2*3+nota3*5)/(2+3+5);
+
+   printf("MEDIA = %.1f\n",MEDIA);
+
+   return 0;
+
+}
