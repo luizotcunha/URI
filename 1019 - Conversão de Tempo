@@ -1,0 +1,14 @@
+#include<stdio.h>
+
+int main(){
+
+	int seg,min,ho,tempo;
+
+	scanf("%d",&tempo);
+	ho=tempo/3600;
+	min=(tempo-ho*3600)/60;
+	seg=tempo-ho*3600-min*60;
+	printf("%d:%d:%d\n",ho,min,seg);
+
+	return 0;
+}
