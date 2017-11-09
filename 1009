@@ -1,0 +1,15 @@
+#include<stdio.h>
+
+int main(){
+
+	double FIXO,MONT,total;
+	char Nome;
+
+	scanf("%s",&Nome);
+	scanf("%lf %lf",&FIXO , &MONT);
+	total=FIXO+(MONT*15)/100;
+	printf("TOTAL = R$ %.2lf\n", total);
+
+return 0 ;
+
+}	
