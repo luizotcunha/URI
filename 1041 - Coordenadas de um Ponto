@@ -1,0 +1,45 @@
+#include<stdio.h>
+
+int main(){
+	float cordenadas[1];
+	scanf("%f %f",&cordenadas[0],&cordenadas[1]);
+
+	if((cordenadas[0]==0) && (cordenadas[1]==0))
+	{
+		printf("Origem\n");
+	}
+	else
+	{
+		if (cordenadas[0]==0)
+		{
+			printf("Eixo Y\n");
+		}
+		else
+		{
+			if (cordenadas[1]==0)
+			{
+				printf("Eixo X\n");
+			}
+			else
+			{
+
+				if((cordenadas[0]>0) && (cordenadas[1]>0) )
+				{
+					printf("Q1\n");
+				}
+				if((cordenadas[0]<0) && (cordenadas[1]<0) )
+				{
+					printf("Q3\n");
+				}
+				if((cordenadas[0]>0) && (cordenadas[1]<0) )
+				{
+					printf("Q4\n");
+				}
+				if((cordenadas[0]<0) && (cordenadas[1]>0) )
+				{
+					printf("Q2\n");
+				}
+			}
+		}
+	}
+}
